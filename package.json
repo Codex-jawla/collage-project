@@ -1,0 +1,21 @@
+
+
+{
+  "name": "lets-chat-2.0",
+  "version": "1.0.0",
+  "description": "real time",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "himanshu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

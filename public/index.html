@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Socket.IO chat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./chat.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="container">
+
+      <!-- HEADER  -->
+
+    <header>
+      <div class="title">
+        <img src="./chat.png" width="35px">
+        <h1>LET's CHAT</h1>
+      </div>
+
+    </header>  
+
+      <!-- CHAT MESSAGES AREA -->
+
+    <div class="messages_container">
+      <div class="messages" id="messages"></div>
+    </div>
+
+      <!-- MESSAGES SENDING PART -->
+
+    <form class="input_container" id="form">
+      <input class="input" id="input" placeholder="send message" />
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </main>
+
+      <!-- CONNECTING JAVASCRIPT AND SOCKET IO FILE -->
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
